@@ -1,8 +1,11 @@
 import time
-from load import load
+from update import update
 
 start_time = time.time()
 
-load()
+# Load data
+update()
+
+
 
 print("--- %s seconds ---" % (time.time() - start_time))

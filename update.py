@@ -51,7 +51,7 @@ def save_as_csv(ds, path):
     :param ds:
     :param path:
     """
-    ds.to_csv(path, index = False)
+    ds.to_csv(path, index=False)
 
 def process_by_country(df, country_code):
     country_ds = get_country(df, country_code)
@@ -73,7 +73,7 @@ def get_database_url(page):
     print("File Fetched Successfully.")
     return url
 
-def load():
+def update():
     # Fetch latest database via HTTP
     url = get_database_url(DATABASE_URL)
     download(url, DATA_PATH)
